@@ -12,7 +12,6 @@ body{
     
 }
 .bodyindex{
-    
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 100px 300px, auto,100px;
@@ -27,7 +26,6 @@ body{
     grid-template-areas: "header"
                          "nav"
                          "main"
-                         "main"
                          "footer";
     
 }
@@ -37,7 +35,7 @@ body{
 }
 .headerIndex{
     grid-area: header;
-    grid-column: 1/5;
+    grid-column: 1/4;
     grid-row: 1/2;
 }  
 
@@ -60,14 +58,6 @@ header{
     background-color: #F8E0F1;
     padding-top: 70px;
 }
-
-header2{
-    width: auto;
-    height: 250px;
-    background-color: #F8E0F1;
-    padding-top: 70px;
-}
-
 .fondo-imagen{
     padding-top: 10px;
     background-image: url(../imagenes/fondo.jpg);
@@ -183,6 +173,7 @@ ul,ol{
 .caja{
     width: 400px;
     background-image: linear-gradient(225deg, rgba(245,169,242,1) 0%, rgba(206,246,245,1) 35%, rgba(144,245,255,1) 100%);
+    border-radius: 8px;
     color: black;
     padding: 10px;
 }
@@ -213,68 +204,47 @@ ul,ol{
         text-align: center;
     }
 }
-.frases p{
-    text-align: center;
-    margin: 50px;
-    margin-bottom: auto;
-    background-color: #CEF6F5;
-    font-size: 20px;
-}
-@media(max-width:500px){
-    .mainIndex{
-    grid-template-rows: repeat(7)1fr;
-    grid-template-areas: "p"
-                         "p"
-                         "p"
-                         ""
-                         "p"
-                         "p"
-                         "p";    
-}
-  .frases{
-    margin-top: 800px;
-  }}
-/*horarios*/
-table{
-    border: solid 1px;
-    border-collapse: collapse;
-    background-image: linear-gradient(225deg, rgba(245,169,242,1) 0%, rgba(206,246,245,1) 35%, rgba(144,245,255,1) 100%);
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 700px;
-}
-th,td{
-    border: 1px solid;
-    padding: 10px;
-    color: black;
-}
-.contacto{
+.contenedor-frases{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    margin-top: 50px;
     align-items: stretch;
-    height: 400px;  
-}
-.cont-redes{
-    width: 400px;
-    background-image: linear-gradient(225deg, rgba(245,169,242,1) 0%, rgba(206,246,245,1) 35%, rgba(144,245,255,1) 100%);
+    height: 500px;
     padding: 10px;
-    text-align: center;
-}
-.redes{
+} 
+.card-frases{
     width: 300px;
-    height: 300px;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-left: 10px;
+    background-image: linear-gradient(225deg, rgba(245,169,242,1) 0%, rgba(206,246,245,1) 35%, rgba(144,245,255,1) 100%);
+    border-radius: 8px;
+    color: black;
+    padding: 10px;
 }
-.maps{
-    width: 300px;
-    height: 300px;
-    margin-top: 20px;
-    margin-right: 40px;
-    margin-left: 40px;
+.contenedor-frases img{
+    width: 250px;
+    height: 200px;
+    margin-left: 15px;
+}
+
+@media(max-width:500px){
+    .mainIndex{
+     height: 3700px;
+     }
+   .contenedor-frases{
+    margin-top: 800px;
+    display: block;
+    flex-direction: column;
+    margin-left: 80px;
+}
+   .card-frase{
+    margin: 10px;
+    background-image: linear-gradient(225deg, rgba(245,169,242,1) 0%, rgba(206,246,245,1) 35%, rgba(144,245,255,1) 100%);
+    border-radius: 8px;
+    font-size: 20px;
+  }}
+
+#card-redes{
+    height: 70%;
 }
 p{
     margin-top: 20px; 
@@ -303,28 +273,43 @@ h4{
     margin: 10px;
 }
 /*menu-productos*/
-.grid-img{
+.mainPro{
+    height: 4300px;
+}
+.containerCard{
+    width: 200%;
+    max-width: 1200px;
+    height: 400px;
     display: flex;
-    align-items: center;
-    justify-content: center;  
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 }
-.grid-img:hover{
-    filter: opacity(0.9);
-    transform: scale(2);
-}
-.galeria-grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: auto;
-    gap: 20px;
-    padding: 20px; 
-}
-.galeria-grid img{
+.containerCard .card-img{
     width: 400px;
     height: 400px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 10px;
+    border-radius: 8px;
+    background-image: linear-gradient(225deg, rgba(245,169,242,1) 0%, rgba(206,246,245,1) 35%, rgba(144,245,255,1) 100%);
+    box-shadow: 0 2px 2px rgba(206,246,245,1);
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.25;
+}
+.containerCard .card-img:hover{
+    transform: translateY(-15px);
+}
+.containerCard .card-img img{
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+}
+.containerCard .card-img h4{
+    font-weight: 600;
+}
+.containerCard .card-img p{
+    font-size: 16px;
+    font-weight: 300;
 }
 @media(max-width:500px){
     .headerindex{
@@ -332,11 +317,7 @@ h4{
         grid-template-areas: "header"
                              "nav"
                              "main"
-                             "main"
                              "footer";
-}
-    .h1Produc{
-        margin-right: 30px;
 }
     .logo{
         width: 150px;
@@ -344,21 +325,20 @@ h4{
         margin-top: 40px;
     }}
 @media(max-width:500px){
-    .galeria-grid{
+    .mainPro{
+        height: 8200px;
+    }
+    .containerCard{
         display: block;
         flex-direction: column;
     }
-    .galeria-grid img{
+    .card-img{
        width: 200px;
        height: 200px;
-       margin-top: 10px;
+       margin-top: 40px;
        margin-left: 10px;
        margin-right: 50px;
     }
-    .parrProd{
-        margin: 10px;
-        font-size: 10px;
-    } 
 }
 /*formularios*/
 .formulario{
@@ -419,31 +399,36 @@ h4{
     height: 60px;
 }
 /*pie*/
+footer{ grid-area: footer;}
 .pie{
-    grid-area: footer;
     background-color: #CEF6F5;
     margin-top: 50px;
     width: auto;
-    height: 160px;
+    height: 250px;
 }
 .pie h3{
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: center;
     font-size: 25px;
 
 }
 .pie-pagina{
-    width: 600px;
+    width: 400px;
     height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
+.redesFooter{
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
 @media(max-width:500px){
     .pie{
      margin-top: 50px;
      width: auto;
-     height: 150px;
+     height: 400px;
     }
     .pie-pagina{
      width: 300px;
@@ -451,5 +436,9 @@ h4{
      display: block;
      margin-right: auto;
      margin-left: auto; 
+    }
+    .redesFooter{
+        display: block;
+        margin-left: 220px;
     }
 }

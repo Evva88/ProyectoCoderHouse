@@ -5,89 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Kawaii</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="shortcut icon" href="../assets/imagenes/paginaicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
-    <header>
+
+<body class="bodyIndex">
+    <header class="headerIndex">
         <img src="../assets/imagenes/paginaicon.jpg" class="logo">
-        <h1>Horarios y Redes</h1>
+        <h1>Encontranos</h1>
     </header>
-
-    <div img src="../assets/imagenes/fondo.jpg" alt="fondo-imagen" class="fondo-imagen">
-    <nav class="navbar">
-            <div id="header">
-                <ul class="nav" id="menu-despl">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pag/productos.html">Menu</a>
-                        <ul>
-                            <li><a href="">Subitem</a></li>
-                            <li><a href="">Subitem</a></li>
-                        </ul>
-                        </li>
-                    <li><a href="../pag/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pag/contactos.html">Contactos</a></li>
-                    <li><a href="../pag/login.html">login</a></li>
-                    <li><a href="#fin">fin</a></li>
-                </ul>
-            </div>
+        <nav class="navbar">
+        <i class="fa-solid fa-bars"></i>
+        
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pag/productos.html">Menu</a>
+                    <ul>
+                        <li><a href="">Subitem</a></li>
+                        <li><a href="">Subitem</a></li>
+                    </ul>
+                    </li>
+                <li><a href="../pag/nosotros.html">Nosotros</a></li>
+                <li><a href="../pag/contactos.html">Contactos</a></li>
+                <li><a href="../pag/login.html">login</a></li>
+                <li><a href="#fin">Fin</a></li>
+            </ul>
+        
     </nav>
-        <aside>
-            <h2>Dias Y Horiarios</h2>
-               <table>
-               <tr>
-                <th>Turnos</th>
-                <td>Martes</td>
-                <td>Miercoles</td>
-                <td>Jueves</td>
-                <td>Viernes</td>
-                <td>Sabados</td>
-                <td>Domingos</td>
-               </tr> 
-               <tr>
-                <th>Mañana</th>
-                <td>11 13:30</td>
-                <td>11 13:30</td>
-                <td>11 13:30</td>
-                <td>11 13:30</td>
-                <td>9 a 14</td>
-                <td>9 a 14</td>
-               </tr>
-               <th>Tarde</th>
-               <td>15 a 19:30</td>
-               <td>15 a 19:30</td>
-               <td>15 a 19:30</td>
-               <td>15 a 19:30</td>
-               <td>15 a 21</td>
-               <td>15 a 21</td>
-            </table>
-            
-        </aside>
-        
+    <main>
+        <h2>Dias Y Horiarios</h2>
+        <div class="container" >
+            <div class="row">
+                <div class="col">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                          <tr>
+                            <th scope="col">Horarios</th>
+                            <th scope="col">Mañana</th>
+                            <th scope="col">Tarde</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-info">
+                            <th scope="row">Viernes</th>
+                            <td>9:00 a 15:00</td>
+                            <td>17:00 a 21:00</td>
+                          </tr>
+                          <tr class="table-info">
+                            <th scope="row">Sabados</th>
+                            <td>9:00 a 14:00</td>
+                            <td>17:00 a 21:00</td>
+                          </tr>
+                          <tr class="table-info">
+                            <th scope="row">Domingos</th>
+                            <td>9:00 a 14:00</td>
+                            <td>16:00 a 21:00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div> 
+            </div>
+        </div>    
         <h2>Nuestras redes</h2>
-    <div class="contacto">
-        <div class="cont-redes">
-             <a href="https://www.instagram.com/eva_velli/" target="_blank"><img src="../assets/imagenes/redes/instagram.png" alt="instagram" class="redes"></a>
+        <div class="contenedor-card p-3 m-2 row" >
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                  <div class="card">
+                    <img src="../assets/imagenes/redes/redesO1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Seguinos</h5>
+                      <a href="https://www.facebook.com/eva.velli" class="card-link">Leenos</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../assets/imagenes/redes/redesO4.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <h5 class="card-title">Seguinos</h5>
+                      <a href="https://api.whatsapp.com/send?phone=541130072687&text=hola!!%20Te%20saluda%20Cafe%20Kawaii,%20danos%20unos%20minutos,%20que%20enseguida%20estamos%20con%20vos" target="_blank" class="card-link">Escribinos</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../assets/imagenes/redes/redesO2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" id="card-redes">
+                      <h5 class="card-title">Seguinos</h5>
+                      <a href="https://www.instagram.com/eva_velli/" class="card-link">Seguinos</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="../assets/imagenes/redes/redesO3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Buscanos</h5>
+                      <a href="https://www.google.com.ar/maps/place/Alto+Avellaneda+Shopping/@-34.6754739,-58.3696457,17z/data=!4m5!3m4!1s0x95a33334248ec25d:0x438c219aee66c1bb!8m2!3d-34.6754783!4d-58.367457" class="card-link">Por aca</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
-        <div class="cont-redes">
-             <a href="https://www.facebook.com/eva.velli/" target="_blank"><img src="../assets/imagenes/redes/facebook.png" alt="face" class="redes"></a>
-        </div>
-        <div class="cont-redes">
-             <a href="https://api.whatsapp.com/send?phone=541130072687&text=hola!!%20Te%20saluda%20Cafe%20Kawaii,%20danos%20unos%20minutos,%20que%20enseguida%20estamos%20con%20vos" target="_blank"><img src="../assets/imagenes/redes/whatsapp.png" alt="warap" class="redes"></a>
-        </div>
-        <div class="cont-redes">
-        <h3>Como llegar</h3>
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1771475277446!2d-58.36964568447354!3d-34.67547828044099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33334248ec25d%3A0x438c219aee66c1bb!2sAlto%20Avellaneda%20Shopping!5e0!3m2!1ses-419!2sar!4v1669070554876!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
-        </div>
-    </div>
+    </main>
+    <footer id="fin" class="pie">
+      <h3>Buscanos</h3>
+      <img src="../assets/imagenes/redes/instagram.png" alt="" class="redesFooter">
+      <img src="../assets/imagenes/redes/whatsapp.png" alt="" class="redesFooter">
+      <img src="../assets/imagenes/redes/facebook.png" alt="" class="redesFooter">
+      <img src="../assets/imagenes/piePagina1.png" alt="pie-pagina"
+      class="pie-pagina">
+    </footer>
 
-
-        <footer id="fin" class="pie">
-            <h3>Eva Velli</h3>
-            <img src="../assets/imagenes/piePagina1.png" alt="pie-pagina"
-            class="pie-pagina">
-            
-        </footer>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>       
 </body>
 </html>
