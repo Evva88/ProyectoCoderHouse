@@ -1,0 +1,16 @@
+
+%tarjetaimg{
+    width: 250px;
+    height: 200px;
+    margin-left: 15px;
+    gap: 10px;
+}
+%tarjeta{
+    width: 200%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}

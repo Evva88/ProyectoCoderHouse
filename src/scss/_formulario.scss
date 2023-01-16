@@ -1,0 +1,90 @@
+.formulario{
+    padding: 80px;
+    background-image: $colorFondo;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 80px;
+    grid-template-areas: "titulo titulo"
+                          "nombre  apellido"
+                          "edad   mail"
+                          "mensaje  mensaje"
+                          "btn     btn";
+
+    >h2:nth-child(1){
+     grid-area: titulo;
+     background-color: transparent;
+    }
+    >label:nth-child(2){
+     grid-area: nombre;
+    }
+    >label:nth-child(3){
+     grid-area: apellido;
+    }
+    >label:nth-child(4){
+     grid-area: edad;
+    }
+    >label:nth-child(5){
+     grid-area: mail;
+    }
+    >label:nth-child(6){
+     grid-area: mensaje;
+     height: 100px;
+    } 
+    >button:nth-child(7){
+     grid-area: btn;
+     @include button (#F8E0F1);
+    }
+    >label{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+    }
+    >label > input, textarea{
+     background-color: transparent;
+     border: 0;
+     border-bottom: 1px solid black;
+     outline: none;
+     height: 60px;
+    }
+  }
+   @media(max-width:600px){
+    .formulario{
+       display: block; 
+       gap: 10px;
+    }
+}
+.formulario-2{
+    padding: 80px;
+    background-image: $colorFondo;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 80px;
+    grid-template-areas: "titulo titulo"
+                          "archivo archivo"
+                          "btn    btn";
+              
+                           >h2:nth-child(1){
+                            grid-area: titulo;
+                            background-color: transparent;
+                           }
+                           >label:nth-child(2){
+                            grid-area: archivo;
+                           } 
+                           >button:nth-child(3){
+                            grid-area: btn;
+                            @include button (#CEF6F5);
+                           }
+                        }
+                        @media(max-width:600px){
+                            .formulario-2{
+                               display: block;
+                               gap: 10px;
+                            }
+                        }

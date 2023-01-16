@@ -1,0 +1,22 @@
+.tabla{
+    margin: 100px auto;
+    width: 1000px;
+    background-image: $colorFondo;
+    >table{
+        width: 100%;
+        text-align: left;
+        border: solid 1px;
+    }
+    >th, td{
+        border: solid 1px;
+    }
+}
+@media(max-width:600px){
+    .tabla{
+        width: 350px;
+        display: block;
+    >th, td{
+        font-size: 12px;
+    }
+}
+}

@@ -1,0 +1,44 @@
+footer{ grid-area: footer}
+.pie{
+        background-color: #CEF6F5;
+        margin-top: 50px;
+        width: auto;
+        height: 250px;
+    
+    >h3{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 25px;
+    }
+    >.pie-pagina{
+        width: 400px;
+        height: auto;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.redesFooter{
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+@media(max-width:600px){
+    .pie{
+     margin-top: 50px;
+     width: auto;
+     height: 450px;
+    }
+    .pie-pagina{
+     width: 300px;
+     height: auto;
+     display: block;
+     margin-right: auto;
+     margin-left: auto; 
+    }
+    .redesFooter{
+        display: block;
+        margin-left: 200px;
+    }
+}

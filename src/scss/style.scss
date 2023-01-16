@@ -1,0 +1,18 @@
+$colorPrincipal:#F8E0F1;
+$colorFondo: linear-gradient(225deg, rgba(245,169,242,1) 0%, rgba(206,246,245,1) 35%, rgba(144,245,255,1) 100%);
+
+@import "reset";
+@import "fonts";
+@import "nav.bar";
+@import "header";
+@import "tarjetas";
+@import "extend";
+@import "bodyBodyIn";
+@import "mixin";
+@import "formulario";
+@import "tabla";
+@import "footer";
+
+
+
+
