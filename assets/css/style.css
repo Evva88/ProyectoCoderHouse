@@ -91,9 +91,10 @@ header {
   background-color: #F8E0F1;
   padding-top: 70px; }
   header > .logo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     display: block;
+    margin-top: 30px;
     border-radius: 50%;
     position: absolute;
     padding: 40px; }
@@ -143,7 +144,7 @@ header {
       margin-top: 10px;
       text-align: center; }
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
   .cajas {
     display: block;
     flex-direction: column;
@@ -168,7 +169,7 @@ header {
     color: black;
     padding: 10px; }
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
   .mainIndex {
     height: 3990px; }
     .mainIndex > .contenedor-frases {
@@ -208,7 +209,7 @@ header {
       font-size: 16px;
       font-weight: 300; }
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
   .mainPro {
     height: 8300px; }
   .containerCard {
@@ -227,7 +228,7 @@ header {
   margin: 20px;
   padding: 20px; }
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
   .contenedor-redes {
     display: block;
     flex-direction: column; }
@@ -242,7 +243,7 @@ header {
     padding: 20px;
     justify-items: center; }
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
   .somosDespr {
     width: 100%;
     max-width: 500px;
