@@ -19,7 +19,7 @@ body{
                          "main main main main"
                          "footer footer footer footer";               
 }
-@media(max-width:600px){
+@media(max-width:500px){
     .bodyindex{
     grid-template-rows: 100px 300px, auto,100px;
     grid-template-areas: "header"
