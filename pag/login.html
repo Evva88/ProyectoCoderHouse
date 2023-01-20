@@ -10,8 +10,8 @@
     <link rel="shortcut icon" href="../assets/imagenes/paginaicon-min.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
-    <header>
+<body class="bodyIndex">
+    <header class="headerIndex">
         <img src="../assets/imagenes/paginaicon-min.jpg" class="logo">
         <h1>Reservas</h1>
     </header>
@@ -31,8 +31,9 @@
                     <li><a href="#fin">fin</a></li>
                 </ul>
     </nav>
-    <main> 
-     <section class="formulario">
+    <main class="mainForm"> 
+        <div>
+        <section class="formulario">
         <h2>Informacion Personal</h2>
         <label>Nombre
         <input type="text" name="nombre" required></label>
@@ -47,8 +48,9 @@
         <textarea name="mensaje"></textarea>
         </label>
         <button type="submit">Enviar</button>
-     </section>
-    </main>
+        </section>
+    </div>
+    
     <aside>            
     <div>
         <section class="formulario-2">
@@ -58,6 +60,7 @@
         </section>
     </div>  
     </aside>
+    </main>
     <footer id="fin" class="pie">
         <h3>Buscanos</h3>
         <a href="https://www.instagram.com/eva_velli/" target="_blank">

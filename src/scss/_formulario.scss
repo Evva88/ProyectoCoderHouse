@@ -51,9 +51,12 @@
      height: 60px;
     }
   }
-   @media(max-width:450px){
+  @media(max-width:425px){
+    .mainForm{
+      height: 1200px;
+    }
     .formulario{
-       display: block; 
+       display: block;
        gap: 10px;
     }
 }
@@ -82,7 +85,7 @@
                             @include button (#CEF6F5);
                            }
                         }
-                        @media(max-width:450px){
+                        @media(max-width:425px){
                             .formulario-2{
                                display: block;
                                gap: 10px;
