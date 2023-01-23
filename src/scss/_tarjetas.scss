@@ -136,6 +136,7 @@
 
     >img {
       @extend %tarjetaimg;
+      margin-top: 10px;
     }
 
     >h4 {
@@ -158,6 +159,9 @@
     display: block;
     flex-direction: column;
     max-width: fit-content;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
 
     >img {
       width: 200px;

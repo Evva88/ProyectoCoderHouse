@@ -227,6 +227,8 @@ h4 {
     transition: all 0.25; }
     .containerCard > .card-img:hover {
       transform: translateY(-15px); }
+    .containerCard > .card-img > img {
+      margin-top: 10px; }
     .containerCard > .card-img > h4 {
       font-weight: 600; }
     .containerCard > .card-img > p {
@@ -239,7 +241,10 @@ h4 {
   .containerCard {
     display: block;
     flex-direction: column;
-    max-width: fit-content; }
+    max-width: fit-content;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px; }
     .containerCard > img {
       width: 200px;
       height: 200px;
