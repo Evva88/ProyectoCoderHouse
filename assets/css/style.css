@@ -274,17 +274,17 @@ h4 {
   .contenedor-redes {
     display: block;
     flex-direction: column;
-    max-width: 350px;
+    max-width: 300px;
     margin-right: 90px;
     margin-left: 30px; }
     .contenedor-redes > .card-redes {
-      max-width: 350px;
+      max-width: 250px;
       margin-top: 10px;
       margin-right: 10px;
       margin-left: 10px; }
       .contenedor-redes > .card-redes > img {
-        width: 300px;
-        height: 300px; } }
+        width: 200px;
+        height: 200px; } }
 
 .somosDespr {
   max-width: 1200px;
