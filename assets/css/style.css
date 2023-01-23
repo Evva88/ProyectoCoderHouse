@@ -240,17 +240,20 @@ h4 {
     height: 8300px; }
   .containerCard {
     display: block;
-    flex-direction: column;
     max-width: fit-content;
-    height: 100px;
+    flex-direction: column;
     margin-right: 20px;
     margin-left: 20px; }
-    .containerCard > img {
-      width: 200px;
-      height: 200px;
+    .containerCard > .card-img {
+      width: 350px;
+      height: 400px;
       margin-top: 20px;
       margin-left: 10px;
-      margin-right: 40px; } }
+      margin-right: 10px; }
+      .containerCard > .card-img > img {
+        width: 300px;
+        height: 550px;
+        margin-right: 5px; } }
 
 .contenedor-redes {
   display: flex;
