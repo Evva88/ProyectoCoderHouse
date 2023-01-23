@@ -122,7 +122,10 @@ h4 {
 @media (max-width: 425px) {
   .headerIndex {
     grid-template-rows: 100px 300px, auto,100px;
-    grid-template-areas: "header" "nav" "main" "footer"; }
+    grid-template-areas: "header"
+ "nav"
+ "main"
+ "footer"; }
     .headerIndex > .logo {
       width: 150px;
       height: 150px;
@@ -335,12 +338,18 @@ h4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px 300px, auto, 100px;
-  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "nav nav nav nav"
+ "main main main main"
+ "footer footer footer footer"; }
 
 @media (max-width: 375px) {
   .bodyindex {
     grid-template-rows: 100px 300px, auto, 100px;
-    grid-template-areas: "header" "nav" "main" "footer"; }
+    grid-template-areas: "header"
+ "nav"
+ "main"
+ "footer"; }
   .titulo {
     margin-left: 40px; } }
 
@@ -372,7 +381,11 @@ h4 {
   gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 80px;
-  grid-template-areas: "titulo titulo" "nombre  apellido" "edad   mail" "mensaje  mensaje" "btn     btn"; }
+  grid-template-areas: "titulo titulo"
+ "nombre  apellido"
+ "edad   mail"
+ "mensaje  mensaje"
+ "btn     btn"; }
   .formulario > h2:nth-child(1) {
     grid-area: titulo;
     background-color: transparent; }
@@ -419,7 +432,9 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 80px;
-  grid-template-areas: "titulo titulo" "archivo archivo" "btn    btn"; }
+  grid-template-areas: "titulo titulo"
+ "archivo archivo"
+ "btn    btn"; }
   .formulario-2 > h2:nth-child(1) {
     grid-area: titulo;
     background-color: transparent; }
@@ -494,3 +509,5 @@ footer {
   .redesFooter {
     display: block;
     margin-left: 200px; } }
+
+  /*PRUEBA
