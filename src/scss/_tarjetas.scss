@@ -97,12 +97,21 @@
       display: block;
       max-width: fit-content;
       flex-direction: column;
-      margin-right: 90px;
-      margin-left: 30px;
+      margin-right: 20px;
+      margin-left: 20px;
 
       >.card-frase {
-        margin: 10px;
+        width: 350px;
+        height: 400px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         background-image: $colorFondo;
+
+        >img{
+          width: 200px;
+          height: 200px;
+        }
       }
     }
   }
@@ -152,7 +161,7 @@
 
 @media(max-width:425px) {
   .main-Pro {
-    height: 8300px;
+    height: 8500px;
   }
 
   .containerCard {
@@ -168,7 +177,7 @@
       margin-top: 20px;
       margin-left: 10px;
       margin-right: 10px;
-      
+
       >img{
         width: 300px;
         height: 550px;

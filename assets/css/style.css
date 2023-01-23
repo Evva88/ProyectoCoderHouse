@@ -200,11 +200,18 @@ h4 {
       display: block;
       max-width: fit-content;
       flex-direction: column;
-      margin-right: 90px;
-      margin-left: 30px; }
+      margin-right: 20px;
+      margin-left: 20px; }
       .mainIndex > .contenedor-frases > .card-frase {
-        margin: 10px;
-        background-image: linear-gradient(225deg, #f5a9f2 0%, #cef6f5 35%, #90f5ff 100%); } }
+        width: 350px;
+        height: 400px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-image: linear-gradient(225deg, #f5a9f2 0%, #cef6f5 35%, #90f5ff 100%); }
+        .mainIndex > .contenedor-frases > .card-frase > img {
+          width: 200px;
+          height: 200px; } }
 
 .mainPro {
   height: 4300px; }
@@ -237,7 +244,7 @@ h4 {
 
 @media (max-width: 425px) {
   .main-Pro {
-    height: 8300px; }
+    height: 8500px; }
   .containerCard {
     display: block;
     max-width: fit-content;
